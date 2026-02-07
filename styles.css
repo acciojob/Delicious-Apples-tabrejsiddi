@@ -1,1 +1,223 @@
-/* your code here */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00f260, #0bffb7);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .product__photo {
+            flex: 1;
+            background: #c8e347;
+            padding: 40px;
+            position: relative;
+        }
+
+        .photo-container {
+            position: relative;
+        }
+
+        .photo-main {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .photo-main img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+        }
+
+        .share-icon, .heart-icon {
+            position: absolute;
+            top: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: white;
+            font-size: 18px;
+        }
+
+        .share-icon {
+            left: 10px;
+        }
+
+        .heart-icon {
+            right: 10px;
+        }
+
+        .photo-album {
+            margin-top: 20px;
+        }
+
+        .photo-album ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .photo-album ul li {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .photo-album ul li:hover {
+            border-color: #c8e347;
+        }
+
+        .photo-album ul li img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product__info {
+            flex: 1;
+            padding: 50px 40px;
+        }
+
+        .product__info h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .product__code {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .price {
+            font-size: 48px;
+            color: #ff5252;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .price span {
+            font-size: 24px;
+        }
+
+        .variant-title {
+            color: #999;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .variant {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .variant-option {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            transition: all 0.3s;
+        }
+
+        .variant-option:hover {
+            border-color: #333;
+            transform: scale(1.1);
+        }
+
+        .variant-option.green {
+            background: #c8e347;
+        }
+
+        .variant-option.yellow {
+            background: #ffd93d;
+        }
+
+        .variant-option.orange {
+            background: #ff9a3d;
+        }
+
+        .variant-option.red {
+            background: #ff5252;
+        }
+
+        .description {
+            margin-bottom: 30px;
+        }
+
+        .description h3 {
+            color: #999;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .description ul {
+            list-style: none;
+        }
+
+        .description ul li {
+            color: #666;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .description ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333;
+        }
+
+        .add-to-cart {
+            background: #ff5252;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background: #ff3838;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 82, 82, 0.4);
+        }
